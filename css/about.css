@@ -1,0 +1,26 @@
+#p1{
+    color:rgb(255, 0, 140);
+    font-size: 20px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+.heading2{
+    color:green;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+#para2{
+    color:blue;
+    text-align: justify;
+}
+.s1-container > img{
+    display: block;
+    height: 500px;
+    width: 500px;
+    margin-left: auto;  
+    margin-right: auto; 
+    text-align: center;
+    border: 5px solid green;
+}
