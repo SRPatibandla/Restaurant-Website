@@ -6,7 +6,7 @@ const port =5000;
 
 
 
-// const url = "mongodb+srv://sireesha:abcdefgh@ABC@cluster0.y9kxf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
 
 const url = "mongodb://localhost:27017"
 
