@@ -1,11 +1,10 @@
 const express= require("express");
 const urlencodedParser = express.urlencoded({ extended: true });
 const MongoClient = require("mongodb").MongoClient;
+const bcrypt=require("bcrypt");
+const connectEnsureLogin=require("connect-ensure-login")
 const app=express();
 const port =5000;
-
-
-
 
 
 const url = "mongodb://localhost:27017"

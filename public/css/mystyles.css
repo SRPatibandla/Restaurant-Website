@@ -1,14 +1,40 @@
 
 * {
   box-sizing: border-box;
+  /* margin: auto; */
 }
 
-#header {
+
+/* .image-show{
+  margin-top: 10px; */
+  /* border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px; */
+
+/* } */
+.container-fluid{
+  background-color: green;
+}
+.footer-l{
+  background-color: green;
+  text-align: center;
+  margin-top:20px;
+}
+
+
+/* #header {
   background-image: url(./images/image3.png); 
   font-family: Georgia;
   display: inline;
   margin-left: 35px;
-}
+} */
+/* body{
+  margin: 0 auto;
+} */
+/* .container{
+  margin:auto;
+}  */
 
 /* body {
   font-family: Arial;
@@ -105,6 +131,7 @@ color:rgb(243, 87, 30);
 color: rgb(171, 241, 65);
 }  */
 /*for mobiles*/
+
 @media only screen and (max-width: 600px) {
   #top-header > img{
 height: 40px;
@@ -125,6 +152,66 @@ width:60px;
  width: 100px;
  }
  }
+
+
+ #menu{
+  margin-bottom:200px;
+}
+h4{
+  margin-top:20%
+}
+
+#linked {
+  position:relative;
+  left:1000px;
+  bottom:1px;
+  padding:5px;
+}
+
+#linked a{
+  text-decoration: none;
+}
+#linked a:hover{
+  color: red;
+  border-bottom: 1px solid #999999;
+  border-right: 1px solid #999999;
+  border-top: 1px solid #999999;
+     border-left: 1px solid #999999;
+}
+
+
+
+#container{
+  width: 1320px;
+  margin: 0 auto;
+  
+}
+
+.image-show{
+  position:relative;
+  width:100%;
+  filter:grayscale(30%);
+  /*filter:brightness(60%)*/
+  
+}
+.image-show img{
+  width:100%;
+  height:auto;
+  border-radius:11px ;
+}
+
+#header{
+  background-color: green;
+}
+.body{
+  background-color: red;
+}
+
+#nav{
+  color: green;
+}
+
+
 .footer-ul{
   padding-left: 0px;
   
@@ -145,26 +232,3 @@ width:60px;
 .footer-ul>li>a:hover{
   color:green;
 }
-#menu{
-  margin-bottom:200px;
-}
-h4{
-  margin-top:20%
-}
-
-#linked {
-   background-image: url(images/image3.png); 
-  /* display: inline; */
-  /* float: right; */
-  /* margin-right: 25px; */
-  position:relative;
-  left:1200px;
-  bottom:20px;
-  padding:10px;
-}
-/* #linked { */
-  /* background-image: url(images/image4.png); */
-  /* position:relative;
-  left:1200px;
-  margin-top: 40px; 
-}  */

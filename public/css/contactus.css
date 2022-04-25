@@ -69,7 +69,7 @@ font-size: 50px;
 } 
 
 input[type=text]{
-    width:100%;
+    width:30%;
     padding: 12px 10px;
     margin: 8px 0;
     display:inline-block;
@@ -82,7 +82,7 @@ input[type=text]{
 input[type=text]:focus{
     background-color: rgb(146, 154, 156);
 }
- input[type=date]{
+ /* input[type=date]{
     width: 100%;
     padding: 12px 10px;
     margin: 8px 0;
@@ -95,10 +95,10 @@ input[type=text]:focus{
 }
 input[type=date]:focus{
     background-color: rgb(146, 154, 156);
-}
+} */
 input[type=email]{
     color: white;
-    width: 100%;
+    width: 30%;
     padding: 12px 10px;
     margin: 8px 0;
     display:inline-block;
@@ -116,7 +116,7 @@ input[type=email]:focus{
 }
 input[type=number]{
     color:white;
-    width: 100%;
+    width: 30%;
     padding: 12px 10px;
     margin: 8px 0;
     display:inline-block;
@@ -130,7 +130,7 @@ input[type=number]:focus{
 
 }
 textarea{
-    width: 100%;
+    width: 30%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -176,3 +176,13 @@ h4{
 /* .main-aside{
 display:flex;
 } */
+
+
+/* <h4>Location</h4>
+          <p>
+             BayLeaf Head Office:
+
+              4940 Belmont SW
+              4034419608
+              
+          </p> */
