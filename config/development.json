@@ -1,0 +1,7 @@
+{
+	"port": 5000,
+	"database": {
+		"name":"restaurantApp",
+		"uri": "mongodb://localhost:27017"
+	}
+}

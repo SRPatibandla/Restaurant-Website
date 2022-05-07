@@ -5,11 +5,12 @@
     text-align: justify;
 }
 .heading2{
-    color:green;
-    font-size: 100px;
+    color:black;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
-    text-decoration: underline;
+    margin-bottom: 40px;
+
 }
 #para2{
     color:blue;
@@ -17,8 +18,8 @@
 }
 .s1-container > img{
     display: block;
-    height: 500px;
-    width: 500px;
+    height: 200px;
+    width: 200px;
     margin-left: auto;  
     margin-right: auto; 
     text-align: center;
