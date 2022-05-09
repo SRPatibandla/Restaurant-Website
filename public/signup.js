@@ -8,8 +8,8 @@ window.onload = function async (req,res) {
    console.log(emailAddress)
     let   fullName = document.getElementById("fullName");
     
-    let   password=document.getElementById("password");
-    let   confirmPassword = document.getElementById("confirmPassword");
+    let password=document.getElementById("password");
+    let confirmPassword = document.getElementById("confirmPassword");
     let errorMessage = document.getElementById("error")
     let successMessage = document.getElementById("success")
     
@@ -41,25 +41,19 @@ window.onload = function async (req,res) {
     else{
      
     const  data = {
-      emailAddress:emailAddress.value ,
+    emailAddress:emailAddress.value ,
     fullName:fullName.value ,
-  
     password:password.value,
     confirmPassword:confirmPassword.value ,
-    
-      
-           };
+     };
       console.log("data",data);
-      successMessage.textContent="Success";
+      // successMessage.textContent="Success";
       successMessage.style.color="green";
-     
-      
-      
        let options={
          method:'POST',
         headers: { "Content-type": "application/json; charset=UTF-8" },
          body:JSON.stringify(data)
-     };
+         };
       
      const response = await fetch('/signup', options);
        

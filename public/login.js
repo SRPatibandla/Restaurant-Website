@@ -24,9 +24,9 @@ formRegister.addEventListener("submit", async (e)=> {
       password:password.value,    
       
         };
-      console.log("data",data);
-      successMessage.textContent="Success";
-      successMessage.style.color="green";
+      // console.log("data",data);
+      // successMessage.textContent="Success";
+      // successMessage.style.color="green";
      
       
       
