@@ -24,18 +24,18 @@ window.onload = function async (req,res) {
     } else if (password.value!==confirmPassword.value){
       errorMessage.textContent="Password does not match. Please check";
       errorMessage.style.color="red";
-      window.alert("Password does not match. Please check")
+      // window.alert("Password does not match. Please check")
 
-    }else if(fullName.value.length>30){
+    } else if(fullName.value.length>30){
       errorMessage.textContent="Please check the length of the full name characters";
       errorMessage.style.color="red";
-      window.alert("Please check the length of the first name characters ")
+      // window.alert("Please check the length of the first name characters ")
   
   
-    }else if(password.value.length>30){
+    }else if(password.value.length<5 || password.value.length>15){
       errorMessage.textContent="Please check the length of the password";
       errorMessage.style.color="red";
-      window.alert("Please check the length of the password ")
+      // window.alert("Please check the length of the password ")
   
     }  
     else{
