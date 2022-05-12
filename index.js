@@ -4,7 +4,7 @@ const bcrypt=require("bcrypt")
 const cors = require('cors')
 const MongoClient = require("mongodb").MongoClient;
 const url = "mongodb://localhost:27017"
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 const urlencodedParser = express.urlencoded({ extended: true });
 
 //intializing app express
