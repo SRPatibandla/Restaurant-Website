@@ -1,99 +1,77 @@
 * {
   font-family: sans-serif;
   box-sizing: border-box;
-  margin: 0; 
-  padding: 0;
- }
+  /* overflow: hidden; */
+}
+ .container {
+  display: block;
+  height:auto;
+}
+.footer-l {
+  background-color: aquamarine;
+  text-align: center;
+  height: 100%;
+  margin-top:-0.1vh;
+}
 
-/* @media only screen and (max-width: 600px) {
-  #container{
-   max-width:fit-content;
-  }
-  .image-show img{
-    width:20px;
-    height:10px;
-    }  */
-/* #container{
-  width:10px;
-} 
-.row1 #linked{
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  } */
+/* #linked { */
+  /* position:relative; */
+  /* right:200px; */
+  /* bottom:0px; 
+  padding:100px; */
 /* } */
 
-/* .image-show{
-  display:block;
-}
-
-
-
-/* for tablets */
- /* @media only screen and (min-width: 768px) {
- #top-header > img{
-height: 60px;
-width:60px;
-} 
-} */
-/*for desktops*/
- /* @media only screen and (min-width:992px) {
-  #top-header > img{
- height: 100px;
- width: 100px;
- }
- }  */
- #container {
-  max-width: 1450vw;
-  display: block;
-}
-
-#linked {
-  position:relative;
-  left:1000px;
-  bottom:1px; 
-  padding:10px;
-}
-
-#linked a{
+.nav-item a{
   text-decoration: none;
 }
-#linked a:hover{
+.nav-item a:hover{
   color: #f71717;;
   border-bottom: 1px solid #999999;
   border-right: 1px solid #999999;
   border-top: 1px solid #999999;
   border-left: 1px solid #999999;
 }
-
-
 .image-show img{
-width: 45em;
-height:33em;  
+width:100%;
+height:auto;  
 padding-left: 0px;
 padding-right: 0px;
 padding-bottom: 0px;
 }
-.image-show{
-  display:flex;
-}
-#span{
-  color:#f71717;
-}
-#header{
- background-color:aquamarine;
- position:relative;
- padding:0.3rem;
+/* .image-show{
+  display:flex; */
+  /* flex-direction:row; */
+/* } */
+
+
+.navbar {
+  background-color: aquamarine;
 }
 
+/* #span{
+  color:#f71717;
+} */
+/* .header{
+ background-color:aquamarine;
+
+} */
+
+/* .nav-bar{
+  background-color:aquamarine;
+} */
+
+/* #svg-btn{
+  padding-right: 0.5em;
+} */
 .container-fluid{
   width: 100%;
-  height:100%;
-  /* background-color: rgb(241, 88, 88); */
+  height:auto;
+  /* background-color:aquamarine; */
+  margin-top: 0%;
  
+}
+.nav{
+  flex-wrap: wrap;
 }
 .container-fluid .nav-link:hover{
   color:#f71717;
@@ -102,12 +80,117 @@ padding-bottom: 0px;
   border-top: 1px solid #999999;
   border-left: 1px solid #999999;
 }
+/* .hamburger{
+  background-color:black;
+  color: rgb(241, 207, 207);
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+} */
 
  
-  .footer-l{
-  background-color: rgb(241, 88, 88);
-  text-align: center;
-  height: 100%;
-  margin-top:-0.3vh;
+.p3{
+ color:blue;
+ text-align: center;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-right {
+  padding: 10px;
+  flex: 25%;
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .mob-nav{display: none;cursor: pointer;} */
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (min-width: 600px) {
+  .mob-nav{display: block;}
+  .nav{display:none;}
+  .image-show{
+    
+    flex-direction:column;
+  }
+} */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  .mob-nav{display:block;}
+  .nav{display:none;}
+  .image-show{
+    
+    flex-direction:column;
+  }
+  .row{
+    width:33.3%;
+  }
+} */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .image-show{
+    flex-direction:column;
+  }
+  .hamburger{
+    display:block;
+  }
+  .nav{
+    display:none;
+    width:100%;
+    flex-direction: column;
+  }
+  .nav.show{
+    display: flex;
+  }
+  .form-map{
+    flex-direction: column;
+
+  }
+} 
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  .image-show{
+    
+    flex-direction:row;
+  }
+  
+  
+}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  .image-show{
+    
+    flex-direction:row;
+  }
+} */

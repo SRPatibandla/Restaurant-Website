@@ -10,8 +10,11 @@
 
     <title>SignUp</title>
     <link rel="shortcut icon" href="images\Spices.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="./css/about.css" rel="stylesheet">
-    <link href="./css/mystyles.css" rel="stylesheet">
+<link href="./css/mystyles.css" rel="stylesheet">
     <style>
        input[type="email"]{
          border-bottom-left-radius: 0px;
@@ -37,51 +40,51 @@
 
   </head>
   <body>
-    <div id="container">
-      <div id="header">
-        <span id="span">CALL US:+1403-441-9608</span>
-        <span id="linked"><a href="./signup.html">SignUp</a></span>
-        <span id="linked"><a href="./login.html">Login</a></span>  
-      </div>
- 
-     <!-- Nav bar -->
- 
-     <nav class="navbar navbar-sm-expand bg-light navbar-light justify-content-between ">
-      <div class="container-fluid">
-         <!--Restaurant logo-->
-         <a style="font-family:fantasy" class="navbar-brand" href="/"><img class="" src="/images/logo1.PNG" height="50" > Bay Leaf </a>
-         <!-- alt="Company Logo" -->
-
-  <ul class="nav justify-content-end">
-         
-         <li class="nav-item">
-             <a class="nav-link" href="index.html">Home</a>
-           </li>
-         <li class="nav-item">
-           <a class="nav-link" href="menu.html">Menu</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="about.html">About</a>
-         </li>
+      <!-- Nav bar starts -->
     
-           <!-- <li class="nav-item">
-            <a class="nav-link" href="signup.html">SignUp</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">ContactUs</a>
-          </li>
-         
-       </ul>
-       <button type="button" class="btn btn-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-        </svg>
-      </button>
-       </div>
-     </nav>
+      <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img  src="/images/logo1.PNG" height="50" alt="Company Logo" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                              <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">ContactUs</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="signup.html">SignUp</a>
+                            </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">Login</a>
+                                </li>
+                                <li>
+                                 <a href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                         </svg>
+                       </a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+  
+                <!-- Nav bar ends -->
       <div id="signup-form">
      
 <p id="error"></p>
@@ -142,7 +145,20 @@
       </nav>
   </footer>
   
+  <!-- <script>
+    const hamburger= document.getElementById('hamburger');
+    const navUL = document.getElementById('nav');
   
+    hamburger.addEventListener('click', () => {
+      navUL.classList.toggle('show')
+    })
+    
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="signup.js"></script>
 
 </body>  

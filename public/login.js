@@ -37,11 +37,15 @@ formRegister.addEventListener("submit", async (e)=> {
      };
       
      const response = await fetch('/login', options);
-       
       const id= await response.json();
       console.log(id);
+      const token = response.headers.get("x-auth-token");
+    console.log(id, token);
+      console.log(id);
       if(response.status==200){
+        localStorage.setItem("x-auth-token", token);
        window.location.href="/menu"
+       
       
       
       }else{

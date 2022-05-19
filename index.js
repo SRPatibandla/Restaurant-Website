@@ -6,6 +6,7 @@ const MongoClient = require("mongodb").MongoClient;
 const url = "mongodb://localhost:27017"
 const port = process.env.PORT || 3000;
 const urlencodedParser = express.urlencoded({ extended: true });
+const jwt= require("jsonwebtoken");
 
 //intializing app express
 const app = express();
@@ -25,11 +26,9 @@ MongoClient.connect(url, function (err, client) {
   console.log("Connected successfully to DATABASE");
 });
 
-
 ////Routes for home page
 app.get('/', (req,res)=>{
   res.sendFile(__dirname +'/public/index.html');//Route handler
- 
 });
 
 //Routes for signup page
@@ -62,10 +61,10 @@ app.get('/about', (req,res)=>{
   res.sendFile(__dirname +'/public/about.html');//Route handler
  
 });
-app.get('/logout', (req, res)=>{
-  // req.logOut();
-   res.redirect('/')
- })
+// app.get('/logout', (req, res)=>{
+//   req.logOut();
+//    res.redirect('/')
+//  })
 /** */
 
 app.post ('/signup', urlencodedParser,  async (req, res)=>{
@@ -121,29 +120,39 @@ app.post ('/login', urlencodedParser, async (req, res)=>{
         console.log(loginFindUser)
         if(!loginFindUser){
          return res.status(400).send({message: "Invalid username/password"})
-      }else {
-          //const newLoginUser= await collection.insertOne(doc)
-          //res.send(newLoginUser)
-          console.log(`Welcome ${email}`)
-          return res.json({status:'ok', message:`<p>Welcome ${email}</p>`})
+       }
+       else {
+        const token = jwt.sign(
+          { id: loginFindUser._id, email: loginFindUser.email },
+          "oNZpSj2XRak9EF86"
+        );
+        res
+          .header("x-auth-token", token)
+          .send({ success: true, message: "login successful" });
+          // const newLoginUser= await collection.insertOne(doc)
+          // res.send(newLoginUser)
+          // console.log(`Welcome ${email}`)
+          // return res.json({status:'ok', message:`<p>Welcome ${email}</p>`})
         }
-        collection.insertOne(doc, (error,result) =>{
-          if(!error){
-            client.close();
-            console.log(result.ops)
-            res.send (doc)
-          }else{
-            client.close();
-            res.send("is an error")
-          }
+        // collection.insertOne(doc, (error,result) =>{
+        //   if(!error){
+        //     client.close();
+        //     console.log(result.ops)
+        //     res.send (doc)
+        //   }else{
+        //     client.close();
+        //     res.send("is an error")
+        //   }
           
-        });
+        // });
       });
 
     }else{
       return res.status(400).send("bad request");
 
     }
+
+
   }catch(ex){
     return res.status(500).send("error");
   }
