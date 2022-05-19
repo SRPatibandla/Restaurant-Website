@@ -8,7 +8,7 @@
   height:auto;
 }
 .footer-l {
-  background-color: aquamarine;
+  background-color: #7fffd4;
   text-align: center;
   height: 100%;
   margin-top:-0.1vh;
@@ -194,3 +194,7 @@ padding-bottom: 0px;
     flex-direction:row;
   }
 } */
+
+
+
+
