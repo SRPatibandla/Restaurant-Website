@@ -25,7 +25,7 @@ app.use('/users',userrouter)
 MongoClient.connect(url, function (err, client) {
   console.log("Connected successfully to DATABASE");
 });
-
+  
 ////Routes for home page
 app.get('/', (req,res)=>{
   res.sendFile(__dirname +'/public/index.html');//Route handler
